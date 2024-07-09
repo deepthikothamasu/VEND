@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/ico/favicon.png">
+
+    <title>BusinessCo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+  <!-- start top -->
+  <div class="top">
+    <div class="container">
+	  <div class="row">
+	    <div class="col-md-6">
+		  <ul class="top-contact pull-left">
+            <li><i class="fa fa-phone"></i>(2)245 23 68</li>
+            <li><i class="fa fa-envelope"></i><a href="mailto:#">info@businessco.com</a></li>
+		  </ul>
+	    </div>
+	    <div class="col-md-6">
+		  <ul class="top-social pull-right">
+            <li><a class="icon-twitter" href="#"></a></li>
+            <li><a class="icon-dribbble" href="#"></a></li>
+            <li><a class="icon-facebook" href="#"></a></li>
+            <li><a class="icon-google-plus" href="#"></a></li>
+            <li><a class="icon-rss" href="#"></a></li>
+            <li><a class="icon-linkedin" href="#"></a></li>
+		  </ul>		
+	    </div>
+	  </div>
+	</div>
+  </div>  
+  <!-- end top -->
+  
+  <!-- start header -->
+  <div class="header sticky-navigation">
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="businessco" /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  <!-- end header -->
+  
+  <!-- start content -->  
+  <div class="content">
+  
+  <div class="page-title">
+    <div class="container">
+	  <h2>Contact Us</h2>
+	</div>
+  </div>
+  
+	<!-- begin google map --> 
+			<div class="google-map">
+				<div id="map_canvas" class="full-shadow" style="width: 100%; padding-top: 30%;">
+				</div>
+                <script src="js/jquery.js"></script>				
+                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+				<script src="js/jquery.gmap.min.js"></script>
+				<script>
+					jQuery('#map_canvas').gMap({
+						maptype: 'ROADMAP',
+						scrollwheel: false,
+						zoom: 18,
+						markers: [
+							{
+								address: 'Sidney', // Your Adress Here
+								html: '',
+								popup: false,
+							}
+						],
+					});
+				</script>
+			</div>
+    <!-- end google map -->  
+	
+	<div class="separator"></div>
+  
+  <div class="container">
+  
+    <div class="row">
+	
+      <div class="col-md-9">
+	              <div id="ContactFormDiv"></div>
+    
+   		    <h4 class="headline">Contact Us</h4>
+		    <p>
+            We would be glad to have feedback from you. Drop us a line, whether it is a comment, a question, a work proposition or just a hello. You can use either the form below or the contact details on the right.
+		    </p>
+		    <br>
+			 
+          <form class="form-horizontal" method="post" action="" name="ContactForm" id="contact">
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Your Name *</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Email *</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Phone *</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Subject *</label>
+                <div class="col-lg-4">
+                  <select class="form-control" name="subject">
+                    <option value="Failure Notification">Failure Notification</option>
+                    <option value="Support Request">Support Request</option>
+                    <option value="Sales">Sales</option>
+                  </select>
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Your comments *</label>
+                <div class="col-lg-5">
+                  <textarea name="comments" class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label "></label>
+                <div class="col-lg-4">
+                  <img src="captcha.php" id="captcha" />
+                  <a onclick="document.getElementById('captcha').src='captcha.php?'+Math.random();document.getElementById('captcha-form').focus();" id="change-image" class="btn btn-warning btn-mini">Refresh</a>
+                </div>
+            </div>
+              
+            <div class="form-group">
+              <label class="col-lg-3 control-label ">Security Code</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="captchaa" id="captchaa" placeholder="Code">
+                </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-lg-3 control-label"></label>
+                <div class="col-lg-4">
+                  <input type="hidden" name="personal_id" id="personal_id">
+                    <button type="button" id="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+          </form>
+	  </div>
+	
+      <div class="col-md-3">
+                <h4 class="headline">Contact Info</h4>
+                		<ul class="contact-info">
+						<li class="contact-address"><i class="fa fa-map-marker"></i><span><strong>Address:</strong> 103088, Ut wisi enim ad minim veniam, 27, of. 304</span></li>
+						<li class="contact-phone"><i class="fa fa-phone"></i><span><strong>Phone:</strong> +1 (229) 991-22-11</span></li>
+						<li class="contact-mail"><i class="fa fa-envelope"></i><strong>E-mail:</strong> <a href="#">mail@mail.com</a></li>
+						<li class="contact-address"><i class="fa fa-clock-o"></i><span><strong>Business Hours:</strong><br> Monday-Friday: 9:<sup>00</sup> - 18:<sup>00</sup><br>
+						Saturday: 10:<sup>00</sup> - 17:<sup>00</sup><br>
+						Sunday: closed</span>
+						</li>
+					</ul>	
+	  </div>
+	  
+	</div>
+  
+
+	  
+
+	  
+  </div>
+	
+  </div>
+  <!-- end content -->
+  
+  <!-- start footer -->  
+  <div class="footer">
+  
+    <div class="footer-top">
+	  <div class="container">
+	    <div class="row">
+		
+		  <div class="col-md-3">
+		    <h3>about us</h3>
+	        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            <p>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui.</p>
+	        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+		  </div>
+		  
+		  <div class="col-md-3">
+		    <h3>recent posts</h3>
+			<ul class="recent-posts">
+			  <li><a href="" title="">Omnis iste natus error sit.</a>
+			  <span class="post-date">May 12, 2014</span></li>
+			  <li><a href="" title="">Accusantium doloremque laudan.</a>
+			  <span class="post-date">May 11, 2014</span></li>
+			  <li><a href="" title="">Omnis iste natus error sit.</a>
+			  <span class="post-date">May 10, 2014</span></li>
+			</ul>
+		  </div>
+
+		  <div class="col-md-3">
+		    <h3>latest tweets</h3>
+							<ul class="twitter">
+								<!-- Twitter Message 1 -->
+								<li>
+									<span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <a href="#" class="link">http://twitter.com</a></span>
+									<span class="twit-date">Jan 7, 2013</span>
+								</li>
+								<!-- Twitter Message 2 -->
+								<li>
+									<span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aliquid :) <a href="#" class="link">http://twitter.com</a></span>
+									<span class="twit-date">Jan 7, 2013</span>
+								</li>
+							</ul>
+		  </div>
+
+		  <div class="col-md-3">
+		    <h3>contact info</h3>
+			<ul class="footer-contact">
+			  <li><i class="fa fa-map-marker"></i><strong>Address:</strong> 12345 Ut wisi enim ad minim veniam, quis nostrud.</li>
+			  <li><i class="fa fa-mobile"></i><strong>Phone:</strong> +1 234 56-78-91 </li>
+			  <li><i class="fa fa-envelope"></i><strong>E-mail:</strong> <a href="mailto:info@businessco.com">info@businessco.com</a> </li>
+			</ul>
+			<ul class="footer-social">
+            <li><a class="icon-twitter" href="#"></a></li>
+            <li><a class="icon-dribbble" href="#"></a></li>
+            <li><a class="icon-facebook" href="#"></a></li>
+            <li><a class="icon-google-plus" href="#"></a></li>
+            <li><a class="icon-rss" href="#"></a></li>
+            <li><a class="icon-linkedin" href="#"></a></li>
+			</ul>
+		  </div>		  
+		  
+		</div>	  
+	  </div>
+	</div>
+	
+	<div class="footer-bottom">
+	  <div class="container">
+		  Copyright &copy; 2014 <strong>alphawd</strong>. All Rights Reserved.
+	  </div>
+	</div>
+  
+  </div>
+  <!-- end footer -->
+
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/waypoints.js"></script>
+    <script src="js/waypoints-sticky.js"></script>
+	
+	<script src="js/jquery.prettyPhoto.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>	
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script> 
+
+    <script src="js/script.js"></script>
+	
+  </body>
+</html>

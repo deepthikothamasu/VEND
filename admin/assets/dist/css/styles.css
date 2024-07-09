@@ -1,0 +1,74 @@
+.obox-bottom {
+    display: block;
+    margin: 0px auto;
+    border: #ff7f27 solid 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.fcol-box1 {
+    float: left;
+    padding: 5px 3px;
+    text-align: center;
+    color: #fff;
+    background: #42586f;
+    margin: 0px 1px;
+}
+.obox-row {
+    width: 100%;
+    display: block;
+}
+.obox-row p {
+    margin: 0 0 0px;
+}
+.fcol-box1{
+  float:left;
+  padding:5px 3px;
+  text-align:center;
+  color:#fff;
+  background:#42586f;
+  width:8.7%;
+  margin:0px 0.5px;
+}
+.frow-box1{
+  float:left;
+  text-align:center;
+  color:#666;
+  width:8.7%;
+  margin:0px 0.5px;
+}
+.fcol-box2, .frow-box2{
+  width:12%;
+}
+.fcol-box3, .frow-box3{
+  width:15%;
+}
+.fcol-box4, .frow-box4{
+  width:20%;
+}
+.fcol-box5, .frow-box5{
+  width:25%;
+}
+
+h2 a {
+    float: right;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: #a7a9ac solid 1px;
+    margin: 0px 5px;
+    background: #1ABB9C;
+    text-align: left;
+    color: #fff;
+    line-height: 25px;
+}
+.finput1 {
+    display: block;
+    padding: 2px 1px;
+    width: 100%;
+    border: #ccc solid 1px;
+    background: #fff;
+    margin: 1px 1px;
+    height: 25px;
+}
+input, select, textarea {
+    color:#666;
+}
